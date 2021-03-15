@@ -21,11 +21,11 @@
     </div>
     <div class="content">
         <div class="textBox">
-            <h2>It's not just a Coffee<br>It's <span>Startbucks</span></h2>
+            <h2>It's not just a Coffee<br>It's <span class="star">Startbucks</span></h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
             book.</p>
-            <a href="#">Learn More</a>
+            <a href="#" class="bt">Learn More</a>
         </div>
         <div class="imgBox">
             <img src="img/img1.png" class="starbuck">
@@ -49,6 +49,10 @@ function imgSlider(anything)
 }
 function changeColor(color) {
     const circle= document.querySelector('.circle');
+    const star = document.querySelector('.star');
+    const bt = document.querySelector('.bt');
+    bt.style.background = color;
+    star.style.color = color;
     circle.style.background=color;         
 }
 </script>    
