@@ -151,7 +151,7 @@ section {
   transform: scale(0.6);
 }
 /*For Responsiveness of this website*/
-@media (max-width: 600px) {
+@media (max-width: 786px) {
   #header {
     padding: 20px;
   }
@@ -192,5 +192,12 @@ section {
   }
   .thumb {
     bottom: -40px;
+  }
+  .sci {
+    background: #017143;
+    right: -70px;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 }
