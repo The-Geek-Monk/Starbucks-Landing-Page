@@ -12,7 +12,8 @@
     <div class="circle"></div>
     <div id="header">
         <a href="#" ><img src="img/logo.png" class="logo"></a>
-        <ul>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">What's New</a></li>
@@ -20,7 +21,7 @@
         </ul>
     </div>
     <div class="content">
-        <div class="textBox">
+        <div class="textBox" >
             <h2>It's not just a Coffee<br>It's <span class="star">Startbucks</span></h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -54,6 +55,13 @@ function changeColor(color) {
     bt.style.background = color;
     star.style.color = color;
     circle.style.background=color;         
+}
+function toggleMenu()
+{
+    var menuToggle = document.querySelector('.toggle');
+    menuToggle.classList.toggle('active');
+    var navigation = document.querySelector('.navigation');
+    navigation.classList.toggle('active');
 }
 </script>    
 </body>
