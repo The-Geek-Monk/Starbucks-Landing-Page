@@ -6,7 +6,7 @@
   font-weight: bold;
 }
 html {
-  overflow: hidden; /* We do this so that there is no scroller(making it a one page thing*/
+  overflow: hidden; /* We do this so that there is no scroller(making it a one page thing and remove it in Responsive Part*/
 }
 .circle {
   position: absolute;
